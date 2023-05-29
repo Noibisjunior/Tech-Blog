@@ -1,0 +1,20 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "A public blog web application built with MERN stack Technologies.",
+  "main": "index.js",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noibisjunior/Tech-Blog.git"
+  },
+  "author": "AbdulSalaam Noibi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noibisjunior/Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/Noibisjunior/Tech-Blog#readme"
+}
