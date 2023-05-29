@@ -154,6 +154,6 @@ Made with :heart: by <a href="https://github.com/Noibisjunior" target="_blank">A
 ### Contact
 If you have any questions or suggestions regarding this project, feel free to contact the project maintainer at 
 
-noibisjunior22@gmail.com.
+noibisjunior22@gmail.com
 
 <a href="#top">Back to top</a>
