@@ -38,5 +38,5 @@ app.use('/users',authUser)
 app.use('/posts',authPost)
 app.use('/categories',authCategory)
 app.listen('5000',()=>{
-     console.log('backend is running');
-});
+     console.log('backend is running')
+})
