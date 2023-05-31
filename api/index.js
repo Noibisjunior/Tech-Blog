@@ -4,10 +4,10 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 const cors = require('cors')
 const path = require('path')
-const authRoute = require('./api/routes/auth')
-const authUser = require('./api/routes/user')
-const authPost = require('./api/routes/post')
-const authCategory = require('./api/routes/categories');
+const authRoute = require('./routes/auth')
+const authUser = require('./routes/user')
+const authPost = require('./routes/post')
+const authCategory = require('./routes/categories');
 const cookieParser = require('cookie-parser');
 
 app.use(express.json())
