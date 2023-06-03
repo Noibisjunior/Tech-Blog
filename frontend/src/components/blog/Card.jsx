@@ -12,7 +12,7 @@ import { formatISO9075 } from 'date-fns';
 
 export const Card = ({ card }) => {
 
-const imageUrl = `http://localhost:5000/uploads/${card.articleImage}`;
+const imageUrl = `https://backend-pmep.onrender.com/uploads/${card.articleImage}`;
 
   return (
     <>

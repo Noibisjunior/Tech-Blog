@@ -15,7 +15,7 @@ const Navigate = useNavigate();
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/posts/${params.id}`
+          `https://backend-pmep.onrender.com/posts/${params.id}`
         );
         const posts = await response.json();
         setBlogs(posts);
@@ -28,9 +28,12 @@ const Navigate = useNavigate();
 
   const handleDelete = async () => {
   try {
-    const response = await fetch(`http://localhost:5000/posts/${params.id}`, {
-      method: 'DELETE',
-    });
+    const response = await fetch(
+      `https://backend-pmep.onrender.com/posts/${params.id}`,
+      {
+        method: 'DELETE',
+      }
+    );
     toast.success('Article deleted successfully');
     Navigate('/');
   } catch (error) {
@@ -39,7 +42,7 @@ const Navigate = useNavigate();
 };
 
 
-  const imageUrl = `http://localhost:5000/uploads/${blogs.articleImage}`;
+  const imageUrl = `https://backend-pmep.onrender.com/uploads/${blogs.articleImage}`;
 
   return (
     <>

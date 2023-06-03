@@ -13,7 +13,7 @@ const EditPost = () => {
 const Navigate = useNavigate()
 
   useEffect(() => {
-    fetch(`http://localhost:5000/posts/${id}`).then((response) => {
+    fetch(`https://backend-pmep.onrender.com/posts/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setTitle(postInfo.title);
         setArticleImage(postInfo.articleImage);
@@ -33,10 +33,13 @@ const Navigate = useNavigate()
     data.append('content', content);
     data.append('articleImage', articleImage); // Add the file to the FormData object
 
-    const response = await fetch(`http://localhost:5000/posts/${id}`, {
-      method: 'PUT',
-      body: data,
-    });
+    const response = await fetch(
+      `https://backend-pmep.onrender.com/posts/${id}`,
+      {
+        method: 'PUT',
+        body: data,
+      }
+    );
 
     if (response.ok) {
       toast.success('Article updated successfully');

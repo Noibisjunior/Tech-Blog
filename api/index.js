@@ -25,7 +25,7 @@ app.use('/uploads', express.static(path.join(__dirname,'/upload')));
 app.use('/uploads', express.static('uploads'));
 
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: 'https://techblog-mx5j.onrender.com',
 };
 
 app.use(cors(corsOptions));

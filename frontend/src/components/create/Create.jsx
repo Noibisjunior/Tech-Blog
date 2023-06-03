@@ -34,7 +34,7 @@ const Create = () => {
     form.append('articleImage', fileName);
     
 
-    const response = await fetch('http://localhost:5000/posts', {
+    const response = await fetch('https://backend-pmep.onrender.com/posts', {
       method: 'POST',
       // headers: { 'Content-Type': 'application/json' },
       body: form,

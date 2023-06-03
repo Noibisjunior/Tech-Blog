@@ -14,11 +14,14 @@ const Navigate = useNavigate()
  async function register(event){
   event.preventDefault(); //prevent the default behaviour of the browser
 
-const response = await fetch('http://localhost:5000/auth/register', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ email,username, password }),
-});
+const response = await fetch(
+  'https://backend-pmep.onrender.com/auth/register',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email, username, password }),
+  }
+);
 const result = await response.json()
 
 
